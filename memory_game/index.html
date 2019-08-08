@@ -20,6 +20,17 @@
       <a href="#">Game</a>
     </nav>
     <main>
+      <div class="score-board">
+        <h2 id="score-label">Score</h2>
+        <div id="user-score">0</div>
+      </div>
+      <input
+        type="button"
+        class="button"
+        value="Reset"
+        onclick="document.location.reload(true)"
+      />
+
       <h2>Instructions</h2>
       <p>
         Concentration, also known as Match Match, Memory, Pelmanism,
@@ -29,16 +40,20 @@
         matching cards.
       </p>
 
-      <div>
+      <div id="game-board" class="board clearfix"></div>
+
+      <!-- <div>
         <img src="images/back.png" alt="Queen of Diamonds" />
         <img src="images/back.png" alt="Queen of Hearts" />
         <img src="images/back.png" alt="King of Diamonds" />
         <img src="images/back.png" alt="King of Hearts" />
-      </div>
+      </div> -->
     </main>
     <footer class="clearfix">
-        <p class="copyright">Copyright 2017</p>
-        <p class="message">Created with &hearts; by <span class="name">GA</span></p>
+      <p class="copyright">Copyright 2017</p>
+      <p class="message">
+        Created with &hearts; by <span class="name">GA</span>
+      </p>
     </footer>
     <script src="main.js"></script>
   </body>
